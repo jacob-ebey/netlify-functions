@@ -4,7 +4,7 @@ exports.handler = async (event) => {
     statusCode: 200,
     body: `Hello ${subject}!`,
     headers: {
-      "Cache-Control": "s-maxage=300",
+      "Cache-Control": "public, s-maxage=300",
     },
   };
 };
